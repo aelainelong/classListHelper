@@ -12,28 +12,28 @@ classes(myElem, action, className);
 Adding an element class:
 
 ```javascript
-const myElem = document.querySelectorAll(".myElement");
+const myElem = document.querySelector(".myElement");
 classes(myElem, "add", "myClass");
 ```
 
 Removing an element class:
 
 ```javascript
-const myElem = document.querySelectorAll(".myElement");
+const myElem = document.querySelector(".myElement");
 classes(myElem, "remove", "myClass");
 ```
 
 Toggling an element class:
 
 ```javascript
-const myElem = document.querySelectorAll(".myElement");
+const myElem = document.querySelector(".myElement");
 classes(myElem, "toggle", "myClass");
 ```
 
 Checking the presence of a specific class on an element:
 
 ```javascript
-const myElem = document.querySelectorAll(".myElement");
+const myElem = document.querySelector(".myElement");
 const elemContainsClass = classes(myElem, "contains", "myClass"); // returns a boolean
 
 if (elemContainsClass){
