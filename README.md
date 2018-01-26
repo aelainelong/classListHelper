@@ -15,21 +15,18 @@ myElem.addClass("myClass");
 Removing an element class:
 
 ```javascript
-const myElem = document.querySelector(".myElement");
 myElem.removeClass("myClass");
 ```
 
 Toggling an element class:
 
 ```javascript
-const myElem = document.querySelector(".myElement");
 myElem.toggleClass("myClass");
 ```
 
 Checking the presence of a specific class on an element:
 
 ```javascript
-const myElem = document.querySelector(".myElement");
 if (myElem.containsClass("myClass")){ // returns a boolean
   // Do something
 }
