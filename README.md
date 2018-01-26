@@ -5,32 +5,36 @@ This works similar to eligrey's [classList.js](https://github.com/eligrey/classL
 
 ## Usage
 
+```javascript
+classes(myElem, action, className);
+```
+
 Adding an element class:
 
 ```javascript
 const myElem = document.querySelectorAll(".myElement");
-classes(myElem, "add", "className");
+classes(myElem, "add", "myClass");
 ```
 
 Removing an element class:
 
 ```javascript
 const myElem = document.querySelectorAll(".myElement");
-classes(myElem, "remove", "className");
+classes(myElem, "remove", "myClass");
 ```
 
 Toggling an element class:
 
 ```javascript
 const myElem = document.querySelectorAll(".myElement");
-classes(myElem, "toggle", "className");
+classes(myElem, "toggle", "myClass");
 ```
 
 Checking the presence of a specific class on an element:
 
 ```javascript
 const myElem = document.querySelectorAll(".myElement");
-const elemContainsClass = classes(myElem, "contains", "className"); // returns a boolean
+const elemContainsClass = classes(myElem, "contains", "myClass"); // returns a boolean
 
 if (elemContainsClass){
   // Do something
